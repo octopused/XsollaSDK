@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol XsollaSDKProtocol {
+public protocol XsollaSDKProtocol {
     func some()
 }
