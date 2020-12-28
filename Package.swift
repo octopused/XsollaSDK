@@ -32,7 +32,7 @@ let package = Package(
         .target(
             name: "XsollaLoginKit",
             dependencies: ["XsollaUtilitiesKit"],
-            path: "LoginKit")
+            path: "LoginKit"),
         .testTarget(
             name: "XsollaSDKTests",
             dependencies: ["XsollaSDK"]),
