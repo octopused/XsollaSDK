@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import XsollaUtilities
 
-public protocol XsollaLoginProtocol {
-    func some()
+public protocol XsollaLoginProtocol
+{
+    func some() -> XsollaUtilitiesProtocol
 }
