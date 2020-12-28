@@ -24,10 +24,10 @@ let package = Package(
         .target(
             name: "XsollaSDK",
             dependencies: []),
-        .target(
-            name: "UtilitiesKit",
-            dependencies: [],
-            path: "UtilitiesKit"),
+//        .target(
+//            name: "UtilitiesKit",
+//            dependencies: [],
+//            path: "UtilitiesKit"),
         .testTarget(
             name: "XsollaSDKTests",
             dependencies: ["XsollaSDK"]),
