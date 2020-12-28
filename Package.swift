@@ -28,7 +28,7 @@ let package = Package(
         .target(
             name: "UtilitiesKit",
             dependencies: [],
-            path: "SourceUtilities"),
+            path: "UtilitiesKit"),
         .testTarget(
             name: "XsollaSDKTests",
             dependencies: ["XsollaSDK"]),
