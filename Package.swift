@@ -15,7 +15,10 @@ let package = Package(
             targets: ["XsollaSDK"]),
         .library(
             name: "XsollaLoginKit",
-            targets: ["XsollaLoginKit"])
+            targets: ["XsollaLoginKit"]),
+        .library(
+            name: "XsollaPaymentsKit",
+            targets: ["XsollaPaymentsKit"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -26,15 +29,19 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "XsollaSDK",
-            dependencies: ["XsollaUtilitiesKit"]),
+            dependencies: ["XsollaUtilities"]),
         .target(
-            name: "XsollaUtilitiesKit",
+            name: "XsollaUtilities",
             dependencies: [],
-            path: "UtilitiesKit"),
+            path: "Utilities"),
         .target(
             name: "XsollaLoginKit",
-            dependencies: ["XsollaUtilitiesKit"],
+            dependencies: ["XsollaUtilities"],
             path: "LoginKit"),
+        .target(
+            name: "XsollaPaymentsKit",
+            dependencies: ["XsollaUtilities"],
+            path: "PaymentsKit"),
         .testTarget(
             name: "XsollaSDKTests",
             dependencies: ["XsollaSDK"]),
