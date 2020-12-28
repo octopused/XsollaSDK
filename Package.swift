@@ -23,15 +23,14 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "XsollaSDK",
-            dependencies: ["XsollaUtilitiesKit"],
-            path: "XsollaSDK"),
+            dependencies: ["XsollaUtilitiesKit"]),
         .target(
             name: "XsollaUtilitiesKit",
             dependencies: [],
             path: "UtilitiesKit"),
         .target(
             name: "XsollaLoginKit",
-            dependencies: ["XsollaUtilitiesKit"],
+            dependencies: [],
             path: "LoginKit"),
         .testTarget(
             name: "XsollaSDKTests",
